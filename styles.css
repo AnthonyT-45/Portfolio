@@ -1,33 +1,41 @@
 body {
-  background-color: #f5f5dc;
+  background-color: #252526;
   height: 200vh;
 }
 
 #border {
   position: sticky;
   margin: auto;
-  display: grid;
-  grid-template-columns: 400px repeat(3, 200px);
   border-style: solid;
   height: 80px;
   width: 95%;
   top: 0px;
   z-index: 1;
-  background-color: #eeeec3;
+  background-color: #3e3e42;
+}
+
+#grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  justify-content: end;
+  top: -80px;
 }
 
 #name {
   position: relative;
-  left: 10px;
+  left: 3%;
   font-family: "Courier New", Courier, monospace;
   font-weight: 800;
 }
 
-#about,
-#projects,
-#resume {
+#name,
+.grid-item {
+  color: #faf9f6;
+}
+
+.grid-item {
   position: relative;
   top: 16px;
-  text-align: right;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
