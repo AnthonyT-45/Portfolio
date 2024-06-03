@@ -9,8 +9,8 @@ body {
   border-style: solid;
   height: 80px;
   width: 95%;
-  top: 0px;
   z-index: 1;
+  top: 0px;
   background-color: #3e3e42;
 }
 
@@ -19,14 +19,16 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 200px);
   justify-content: end;
-  top: -80px;
+  bottom: 52px;
 }
 
 #name {
   position: relative;
   left: 3%;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: 800;
+  top: 11px;
+  font-family: aAtmospheric, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: x-large;
 }
 
 #name,
@@ -36,6 +38,18 @@ body {
 
 .grid-item {
   position: relative;
-  top: 16px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: IceHockey, Arial, Helvetica, sans-serif;
+  top: 6px;
+}
+
+@font-face {
+  font-family: IceHockey;
+  src: url("https://raw.githubusercontent.com/AnthonyT-45/Fonts/main/ice-hockey.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: aAtmospheric;
+  src: url("https://raw.githubusercontent.com/AnthonyT-45/Fonts/main/aAtmospheric.woff2")
+    format("woff2");
 }
