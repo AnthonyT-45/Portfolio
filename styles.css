@@ -16,9 +16,10 @@ body {
   z-index: 5;
   top: 0px;
   background-color: #3e3e42;
-  width: clamp(1000px, 100%, 100%);
+  width: clamp(0px, 100%, 100%);
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 #grid {
@@ -64,15 +65,13 @@ body {
 
 @media (max-width: 1000px) {
   #grid {
-    visibility: hidden;
+    display: none;
   }
 
   .dropdown {
-    position: fixed;
-    display: flex;
-    right: 1em;
-    padding: 20px;
-    width: 10%;
+    position: relative;
+    display: block;
+    right: 2%;
   }
 
   .drop-button {
@@ -91,6 +90,6 @@ body {
 
 @media (max-width: 600px) {
   #name {
-    width: 50vw;
+    width: 30vw;
   }
 }
