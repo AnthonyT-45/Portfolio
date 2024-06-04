@@ -1,6 +1,7 @@
 body {
   background-color: #252526;
   height: 200vh;
+  overflow-x: hidden;
 }
 
 #border {
@@ -12,6 +13,7 @@ body {
   z-index: 1;
   top: 0px;
   background-color: #3e3e42;
+  width: clamp(1200px, 95%, 100%);
 }
 
 #grid {
@@ -37,9 +39,11 @@ body {
 }
 
 .grid-item {
+  margin: auto;
   position: relative;
   font-family: IceHockey, Arial, Helvetica, sans-serif;
   top: 6px;
+  padding: 50px, 50px, 50px, 50px;
 }
 
 @font-face {
