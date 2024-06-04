@@ -1,5 +1,6 @@
 body {
   background-color: #252526;
+  width: 100vw;
   height: 200vh;
   overflow-x: hidden;
   margin: auto;
@@ -25,6 +26,7 @@ body {
   margin-left: auto;
   display: grid;
   grid-template-columns: repeat(3, 200px);
+  top: -2px;
 }
 
 #name {
