@@ -35,7 +35,7 @@ body {
 
 #name {
   position: relative;
-  margin-left: 25px;
+  left: 2%;
   font-family: aAtmospheric, Arial, Helvetica, sans-serif;
   font-weight: 300;
   font-size: large;
@@ -52,20 +52,58 @@ body {
   font-size: small;
 }
 
+.dropdown {
+  display: none;
+}
+
 @font-face {
   font-family: IceHockey;
-  src: url("https://raw.githubusercontent.com/AnthonyT-45/Fonts/main/ice-hockey.woff2")
+  src: url("https://raw.githubusercontent.com/AnthonyT-45/Things/main/ice-hockey.woff2")
     format("woff2");
 }
 
 @font-face {
   font-family: aAtmospheric;
-  src: url("https://raw.githubusercontent.com/AnthonyT-45/Fonts/main/aAtmospheric.woff2")
+  src: url("https://raw.githubusercontent.com/AnthonyT-45/Things/main/aAtmospheric.woff2")
     format("woff2");
 }
 
 @media (max-width: 1000px) {
+  #border {
+    width: clamp(1000px, 100%, 100%);
+  }
+
   #grid {
     visibility: hidden;
+  }
+
+  .dropdown {
+    position: fixed;
+    display: flex;
+    right: 1em;
+    padding: 20px;
+    width: 5vw;
+  }
+
+  .drop-button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+  }
+
+  a {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  #border {
+    width: clamp(2px, 100%, 100%);
+  }
+  #name {
+    width: 50vw;
   }
 }
