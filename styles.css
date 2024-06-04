@@ -8,8 +8,9 @@ body {
 #border {
   position: sticky;
   margin: auto;
-  border-style: solid;
-  height: 80px;
+  border-style: solid none solid none;
+  border-width: thick;
+  height: 70px;
   width: 95%;
   z-index: 1;
   top: 0px;
@@ -20,9 +21,9 @@ body {
 #grid {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(3, 200px);
+  grid-template-columns: 220px 200px 200px;
   justify-content: end;
-  bottom: 52px;
+  top: -37px;
 }
 
 #name {
@@ -31,7 +32,7 @@ body {
   top: 11px;
   font-family: aAtmospheric, Arial, Helvetica, sans-serif;
   font-weight: 300;
-  font-size: x-large;
+  font-size: large;
 }
 
 #name,
@@ -45,6 +46,7 @@ body {
   font-family: IceHockey, Arial, Helvetica, sans-serif;
   top: 6px;
   padding: 50px, 50px, 50px, 50px;
+  font-size: small;
 }
 
 @font-face {
@@ -59,25 +61,8 @@ body {
     format("woff2");
 }
 
-@media (max-width: 600px) {
-  #border {
-    margin: auto;
-    height: 60px;
-    width: 95%;
-    width: clamp(0px, 100%, 100%);
-  }
-  #name {
-    font-size: small;
-    bottom: 40px;
-  }
+@media (max-width: 1000px) {
   #grid {
-    grid-template-columns: 100px 100px 100px;
-    bottom: 26px;
-    left: 20px;
-  }
-  .grid-item {
-    font-size: xx-small;
-    margin: 0;
-    padding: 0px;
+    visibility: hidden;
   }
 }
