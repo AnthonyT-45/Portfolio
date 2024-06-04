@@ -1,8 +1,10 @@
-body {
-  background-color: #252526;
+html {
   width: 100vw;
   height: 200vh;
-  overflow-x: hidden;
+}
+
+body {
+  background-color: #252526;
   margin: auto;
 }
 
