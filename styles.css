@@ -194,20 +194,22 @@ body {
 
 @media (max-width: 600px) {
   .description-container {
-    left: 0%;
+    left: auto;
     justify-content: center;
   }
   #hello {
-    width: 30vw;
+    width: auto;
     font-size: 6em;
-    left: 15vw;
+    left: auto;
+    margin: 0 auto;
+    text-align: center;
   }
   #name {
     width: 30vw;
   }
   #mini-status {
-    left: 0%;
-    width: 80vw;
+    left: auto;
+    width: auto;
     text-align: center;
   }
 }
