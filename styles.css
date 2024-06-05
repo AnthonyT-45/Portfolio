@@ -1,5 +1,6 @@
 html {
   scrollbar-color: #36454f #323233;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -112,6 +113,29 @@ body {
   width: 95vw;
   border: 1px solid gray;
 }
+#line-2 {
+  position: relative;
+  width: 95vw;
+  border: 1px solid gray;
+  top: 1200px;
+}
+
+.projects-container {
+  position: relative;
+  top: 475px;
+  margin: 2%;
+  margin-top: 0;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+#projects-header {
+  font-family: ZTTalk-Bold;
+  font-size: 3em;
+  letter-spacing: 0.03em;
+  color: white;
+}
 
 @font-face {
   font-family: IceHockey;
@@ -203,6 +227,7 @@ body {
     left: auto;
     margin: 0 auto;
     text-align: center;
+    padding: 5px;
   }
   #name {
     width: 30vw;
