@@ -22,11 +22,11 @@ body {
   justify-content: space-between;
 }
 
-#grid {
+.nav-container {
   position: relative;
   margin-left: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 200px);
+  display: flex;
+  margin-right: 30px;
   top: -2px;
 }
 
@@ -41,13 +41,19 @@ body {
 }
 
 #name,
-.grid-item {
+.nav-links {
   color: #faf9f6;
 }
 
-.grid-item {
+.nav-links {
   font-family: IceHockey, Arial, Helvetica, sans-serif;
   font-size: small;
+  text-decoration: none;
+  padding: 20px;
+}
+
+#about {
+  word-spacing: -10px;
 }
 
 .dropdown {
@@ -67,7 +73,7 @@ body {
 }
 
 @media (max-width: 1000px) {
-  #grid {
+  .nav-container {
     display: none;
   }
 
