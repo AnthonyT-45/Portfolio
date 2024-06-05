@@ -198,8 +198,9 @@ body {
     justify-content: center;
   }
   #hello {
-    left: 0%;
-    font-size: 5em;
+    width: 30vw;
+    font-size: 6em;
+    left: 15vw;
   }
   #name {
     width: 30vw;
