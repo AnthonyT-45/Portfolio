@@ -32,10 +32,12 @@ body {
 
 #name {
   position: relative;
+  margin-left: 10px;
   left: 2%;
   font-family: aAtmospheric, Arial, Helvetica, sans-serif;
   font-weight: 300;
   font-size: large;
+  width: 1vw;
 }
 
 #name,
