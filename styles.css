@@ -40,7 +40,7 @@ body {
   left: 2%;
   font-family: aAtmospheric, Arial, Helvetica, sans-serif;
   font-weight: 300;
-  font-size: large;
+  font-size: 1em;
   width: 1vw;
 }
 
@@ -51,7 +51,7 @@ body {
 
 .nav-links {
   font-family: IceHockey, Arial, Helvetica, sans-serif;
-  font-size: small;
+  font-size: 0.75em;
   text-decoration: none;
   padding: 20px;
 }
@@ -68,6 +68,44 @@ body {
   display: none;
 }
 
+.description-container {
+  position: relative;
+  left: -10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.description {
+  max-width: 100%;
+  max-height: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#hello,
+#mini-status {
+  position: relative;
+  font-family: ZTTalk-Bold;
+  color: white;
+  letter-spacing: 0.1em;
+  margin: 10px;
+}
+#hello {
+  left: 10%;
+  margin-top: 3%;
+  font-size: 10em;
+  padding: 5px;
+}
+#mini-status {
+  left: 16%;
+  font-size: 2em;
+  padding: 10px;
+  width: 75vw;
+}
+
 @font-face {
   font-family: IceHockey;
   src: url("https://raw.githubusercontent.com/AnthonyT-45/Things/main/ice-hockey.woff2")
@@ -77,6 +115,12 @@ body {
 @font-face {
   font-family: aAtmospheric;
   src: url("https://raw.githubusercontent.com/AnthonyT-45/Things/main/aAtmospheric.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: ZTTalk-Bold;
+  src: url("https://raw.githubusercontent.com/AnthonyT-45/Things/main/ZTTalk-Bold.woff2")
     format("woff2");
 }
 
@@ -142,7 +186,19 @@ body {
 }
 
 @media (max-width: 600px) {
+  .description-container {
+    left: 0%;
+    justify-content: center;
+  }
+  #hello {
+    left: 1%;
+  }
   #name {
     width: 30vw;
+  }
+  #mini-status {
+    left: 4%;
+    width: 80vw;
+    text-align: center;
   }
 }
