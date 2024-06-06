@@ -120,7 +120,7 @@ body {
   top: 1200px;
 }
 
-.projects-container {
+.projects-title-container {
   position: relative;
   top: 470px;
   margin: 2%;
@@ -237,9 +237,9 @@ body {
     width: auto;
     text-align: center;
   }
-  .projects-container {
+  .projects-title-container {
     top: 420px;
-    padding-top: 7%;
+    padding-top: 10%;
   }
 
   #line-1 {
