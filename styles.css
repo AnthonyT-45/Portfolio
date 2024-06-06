@@ -122,7 +122,7 @@ body {
 
 .projects-container {
   position: relative;
-  top: 475px;
+  top: 470px;
   margin: 2%;
   margin-top: 0;
   padding: 2%;
@@ -236,5 +236,13 @@ body {
     left: auto;
     width: auto;
     text-align: center;
+  }
+  .projects-container {
+    top: 420px;
+    padding-top: 7%;
+  }
+
+  #line-1 {
+    top: 470px;
   }
 }
