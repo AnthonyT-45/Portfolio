@@ -143,10 +143,29 @@ body {
   object-fit: cover;
   border-radius: 10%;
   transition: filter 0.3s ease-in-out;
+  border: 10px solid black;
 }
 
-.project-img:hover {
-  filter: blur(2px);
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  font-family: Panton;
+  text-transform: uppercase;
+}
+
+.project-item:hover .project-img {
+  filter: blur(3px);
+}
+
+.project-item:hover .overlay {
+  opacity: 1;
 }
 
 @font-face {
@@ -164,6 +183,12 @@ body {
 @font-face {
   font-family: ZTTalk-Bold;
   src: url("https://raw.githubusercontent.com/AnthonyT-45/Things/main/ZTTalk-Bold.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: Panton;
+  src: url("https://raw.githubusercontent.com/AnthonyT-45/Things/main/Panton-Trial-ExtraBold.woff2")
     format("woff2");
 }
 
