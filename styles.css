@@ -226,15 +226,17 @@ body {
   display: flex;
   align-items: center;
   padding: 10px;
-  background-color: #252526;
+  background-color: #5d5d5d;
+}
+
+.modal-header-text,
+.modal-text {
+  color: #e1d9d1;
 }
 
 .modal-header-text {
   margin: 0;
-}
-
-.modal-text {
-  color: #e1d9d1;
+  font-family: Panton;
 }
 
 @font-face {

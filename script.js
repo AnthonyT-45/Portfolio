@@ -1,28 +1,34 @@
-var modal = document.getElementById("modal");
-
 var projectItems = document.querySelectorAll(".project-item");
+var currentModal;
 
 projectItems.forEach(function (item) {
   item.addEventListener("click", function () {
-    modal.style.display = "block";
+    var projectId = item.id;
+    var modalId = "modal-" + projectId;
+    currentModal = document.getElementById(modalId);
+    if (currentModal) {
+      currentModal.style.display = "block";
+    } else {
+      console.log("Modal not found for project ID: " + projectId);
+    }
   });
 });
 
-var span = document.getElementsByClassName("close")[0];
+document.querySelectorAll(".close").forEach(function (span) {
+  span.addEventListener("click", function () {
+    if (currentModal) {
+      currentModal.style.display = "none";
+      currentModal = null;
+    }
+  });
+});
 
-span.onclick = function () {
-  modal.style.display = "none";
-};
-
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+window.addEventListener("click", function (event) {
+  if (currentModal && event.target == currentModal) {
+    currentModal.style.display = "none";
+    currentModal = null;
   }
-};
-
-document.getElementById("drop-button").onclick = function () {
-  dropdownButton();
-};
+});
 
 function dropdownButton() {
   document.getElementById("dropdown-links").classList.toggle("show");
