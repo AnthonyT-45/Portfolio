@@ -126,7 +126,7 @@ body {
   display: grid;
   padding: 5%;
   grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
+  gap: 75px;
   margin: 0 auto;
   justify-items: center;
   align-items: center;
@@ -150,6 +150,7 @@ body {
   border-radius: 10%;
   transition: filter 0.3s ease-in-out;
   border: 10px solid black;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.6);
 }
 
 .overlay {
@@ -197,18 +198,20 @@ body {
 
 .modal-content {
   position: relative;
-  background-color: #fefefe;
+  background-color: #3b3b3b;
   margin: auto;
   padding: 0;
-  border: 2px solid #888;
+  border: 2px solid #141414;
   width: 80%;
   max-width: 700px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .close {
+  position: absolute;
+  top: 0;
+  right: 0;
   color: #000;
-  float: right;
   font-size: 40px;
   font-weight: bold;
 }
@@ -217,6 +220,21 @@ body {
 .close:focus {
   text-decoration: none;
   cursor: pointer;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #252526;
+}
+
+.modal-header-text {
+  margin: 0;
+}
+
+.modal-text {
+  color: #e1d9d1;
 }
 
 @font-face {
