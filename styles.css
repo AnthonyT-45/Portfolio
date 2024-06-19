@@ -307,7 +307,7 @@ body {
   }
   .projects-container {
     grid-template-columns: repeat(1, 1fr);
-    padding-right: 9%;
+    margin-right: 4%;
   }
 }
 
