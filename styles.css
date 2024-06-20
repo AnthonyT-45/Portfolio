@@ -164,7 +164,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
-  transition: 0.3s ease-in-out;
+  transition: filter 0.3s ease-in, transform 0.3s ease, opacity 0.2s ease-in;
   color: white;
   font-size: 2.5rem;
   text-align: center;
@@ -177,6 +177,7 @@ body {
 
 .project-item:hover .project-img {
   filter: blur(3px);
+  transform: scale(1.01);
 }
 
 .project-item:hover .overlay {
@@ -233,7 +234,8 @@ body {
 }
 
 .modal-header-text,
-.modal-text {
+.modal-text,
+.project-description-list {
   color: #e1d9d1;
 }
 
@@ -245,6 +247,10 @@ body {
   font-family: Interphases;
   letter-spacing: 0.3px;
   padding-left: 1.5%;
+}
+.project-description-list {
+  font-family: Interphases;
+  letter-spacing: 0.3px;
 }
 
 .github-logo {
