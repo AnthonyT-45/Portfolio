@@ -388,4 +388,9 @@ body {
     width: auto;
     text-align: center;
   }
+  .modal-header-text {
+    margin: 0;
+    font-family: Panton;
+    font-size: 1.2rem;
+  }
 }
