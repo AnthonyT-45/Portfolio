@@ -1,6 +1,8 @@
 var projectItems = document.querySelectorAll(".project-item");
 var currentModal;
 
+const dropdownBtn = document.getElementById("drop-button");
+
 projectItems.forEach(function (item) {
   item.addEventListener("click", function () {
     var projectId = item.id;
@@ -30,11 +32,12 @@ window.addEventListener("click", function (event) {
   }
 });
 
-function dropdownButton() {
-  document.getElementById("dropdown-links").classList.toggle("show");
-}
+dropdownBtn.addEventListener("click", () => {
+  const dropdownContent = document.getElementById("dropdown-links");
+  dropdownContent.classList.toggle("show");
+});
 
-window.onclick = function (event) {
+window.addEventListener("click", function (event) {
   if (
     !event.target.matches("#drop-button") &&
     !event.target.matches("#drop-image")
@@ -47,4 +50,4 @@ window.onclick = function (event) {
       }
     }
   }
-};
+});

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -17,7 +18,7 @@
         </nav>
       </div>
       <div class="dropdown">
-        <button id="drop-button" type="button">
+        <button id="drop-button" type="button" class="btn btn-default">
           <img
             src="https://github.com/AnthonyT-45/Things/blob/main/dropdown-icon.png?raw=true"
             id="drop-image"
@@ -33,18 +34,26 @@
         </button>
       </div>
     </div>
-    <section class="projects-container" id="projects-tab">
-      <div class="project-item" id="project-1">
-          <img class="project-img" id="project-1-img" src="https://github.com/AnthonyT-45/Things/blob/main/Project-1-noedit.png?raw=true" alt="project-1" width="1280" height="720">
-        <div class="overlay">Cutelandia Corrupted</div>
-      </div>
-      <div class="project-item" id="project-2">
-        <img class="project-img" src="https://github.com/AnthonyT-45/Things/blob/main/Project-2-noedit2.png?raw=true" alt="project-2" width="1280" height="720">
-        <div class="overlay">Abyss</div>
-      </div>
-      <div class="project-item" id="project-3">
-        <img class="project-img" src="https://github.com/AnthonyT-45/Things/blob/main/Project-3-noedit.png?raw=true" alt="project-3" width="1280" height="720">
-        <div class="overlay">Dungeon Tactics</div>
+    <section class="projects-container container" id="projects-tab">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="project-item" id="project-1">
+            <img class="project-img img-responsive" id="project-1-img" src="https://github.com/AnthonyT-45/Things/blob/main/Project-1-noedit.png?raw=true" alt="project-1" width="1920" height="1080">
+          <div class="overlay text-start">Cutelandia Corrupted</div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="project-item" id="project-2">
+            <img class="project-img img-responsive" src="https://github.com/AnthonyT-45/Things/blob/main/Project-2-noedit2.png?raw=true" alt="project-2" width="1920" height="1080">
+            <div class="overlay text-start">Abyss</div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="project-item" id="project-3">
+            <img class="project-img img-responsive" src="https://github.com/AnthonyT-45/Things/blob/main/Project-3-noedit.png?raw=true" alt="project-3" width="1920" height="1080">
+            <div class="overlay text-start">Dungeon Tactics</div>
+          </div>
+        </div>
       </div>
     </section>
     <div id="modal-project-1" class="modal">
@@ -123,27 +132,21 @@
       </div>
     </div>
 
-    <hr id="line-1"></hr>
-    <section class="description-container">
-      <div id="description">
-        <h1 id="hello">Hello!</h1>
-        <p id="mini-status">
-          I'm Anthony Therrien, a recent graduate in Computer Science from the
-          University of North Carolina at Charlotte.
-        </p>
+    <hr class="line" id="line-1"></hr>
+    <section class="description-container container">
+      <div class="row">
+        <div id="description" class="text-center">
+          <p id="mini-status">
+            My name is Anthony Therrien, a recent graduate in Computer Science from the
+            University of North Carolina at Charlotte. I am currently engaged in personal projects as I actively seek employment opportunities.
+          </p>
+        </div>
       </div>
     </section>
-    <div class="modal">
-      <div class="project-modal">
-        <span class="close">&times;</span>
-        <p>TEST</p>
-      </div>
-    </div>
-    <hr id="line-2"></hr>
+    <hr class="line" id="line-2"></hr>
+
     <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </body>
-  <footer class="footer">
-    <div class="footer-div">
-    </div>
-  </footer>
 </html>
