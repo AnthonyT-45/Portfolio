@@ -1,53 +1,43 @@
-var projectItems = document.querySelectorAll(".project-item");
-var currentModal;
+const sections = document.querySelectorAll(".sections");
+const logo = document.getElementById("port-logo");
+const aboutContainer = document.querySelector(".about-container");
+const projectContainer = document.querySelector(".project-container");
+const sectionContainer = document.querySelector(".sections-container");
 
-const dropdownBtn = document.getElementById("drop-button");
-
-projectItems.forEach(function (item) {
-  item.addEventListener("click", function () {
-    var projectId = item.id;
-    var modalId = "modal-" + projectId;
-    currentModal = document.getElementById(modalId);
-    if (currentModal) {
-      currentModal.style.display = "block";
-    } else {
-      console.log("Modal not found for project ID: " + projectId);
+sections.forEach((section) => {
+  section.addEventListener("click", function () {
+    if (section.id === "resume") {
+      return;
     }
+    if (section.id === "about") {
+      setTimeout(() => {
+        aboutContainer.style.visibility = "visible";
+        aboutContainer.style.opacity = "1";
+      }, 500);
+    }
+
+    if (section.id === "projects") {
+      setTimeout(() => {
+        projectContainer.style.visibility = "visible";
+        projectContainer.style.opacity = "1";
+      }, 500);
+    }
+    sections.forEach((section) => {
+      section.style.visibility = "hidden";
+      section.style.opacity = "0";
+    });
   });
 });
 
-document.querySelectorAll(".close").forEach(function (span) {
-  span.addEventListener("click", function () {
-    if (currentModal) {
-      currentModal.style.display = "none";
-      currentModal = null;
-    }
+logo.addEventListener("click", function () {
+  sections.forEach((section) => {
+    aboutContainer.style.visibility = "hidden";
+    aboutContainer.style.opacity = "0";
+    projectContainer.style.visibility = "hidden";
+    projectContainer.style.opacity = "0";
+    setTimeout(() => {
+      section.style.visibility = "visible";
+      section.style.opacity = "1";
+    }, 500);
   });
-});
-
-window.addEventListener("click", function (event) {
-  if (currentModal && event.target == currentModal) {
-    currentModal.style.display = "none";
-    currentModal = null;
-  }
-});
-
-dropdownBtn.addEventListener("click", () => {
-  const dropdownContent = document.getElementById("dropdown-links");
-  dropdownContent.classList.toggle("show");
-});
-
-window.addEventListener("click", function (event) {
-  if (
-    !event.target.matches("#drop-button") &&
-    !event.target.matches("#drop-image")
-  ) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    for (var i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains("show")) {
-        openDropdown.classList.remove("show");
-      }
-    }
-  }
 });

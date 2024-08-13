@@ -2,151 +2,103 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div id="border">
-      <h1 id="name">Anthony Therrien</h1>
-      <div class="nav-container">
-        <nav class="nav-bar">
-          <a href="#line-1" id="about" class="nav-links">ABOUT ME</a>
-          <a href="#" id="projects" class="nav-links">PROJECTS</a>
-          <a href="https://drive.google.com/file/d/1Uq5oPvbdfMoCtmB6UBwm9sVomo4E6l4S/view?usp=sharing" id="resume" class="nav-links" target="_blank">RESUME</a>
-        </nav>
-      </div>
-      <div class="dropdown">
-        <button id="drop-button" type="button" class="btn btn-default">
-          <img
-            src="https://github.com/AnthonyT-45/Things/blob/main/dropdown-icon.png?raw=true"
-            id="drop-image"
-            alt="dropdown-menu"
-            width="20"
-            height="15"
-          />
-          <div id="dropdown-links" class="dropdown-content">
-            <a href="#line-1" id="aboutme-link">ABOUT ME</a>
-            <a href="#" id="projects-link">PROJECTS</a>
-            <a href="https://drive.google.com/file/d/1Uq5oPvbdfMoCtmB6UBwm9sVomo4E6l4S/view?usp=sharing" id="resume-link" target="_blank">RESUME</a>
-          </div>
-        </button>
-      </div>
+    <div class="container-fluid total-logo" id="port-logo">
+      <h1 class="logo" id="first">Anthony</h1>
+      <h1 class="logo" id="last">Therrien</h1>
     </div>
-    <section class="projects-container container" id="projects-tab">
+    <div class="container-fluid sections-container">
       <div class="row">
-        <div class="col-sm-4">
-          <div class="project-item" id="project-1">
-            <img class="project-img img-responsive" id="project-1-img" src="https://github.com/AnthonyT-45/Things/blob/main/Project-1-noedit.png?raw=true" alt="project-1" width="1920" height="1080">
-          <div class="overlay text-start">Cutelandia Corrupted</div>
-          </div>
+        <div class="col">
+          <h1 class="text-center sections" id="about">about</h1>
         </div>
-        <div class="col-sm-4">
-          <div class="project-item" id="project-2">
-            <img class="project-img img-responsive" src="https://github.com/AnthonyT-45/Things/blob/main/Project-2-noedit2.png?raw=true" alt="project-2" width="1920" height="1080">
-            <div class="overlay text-start">Abyss</div>
-          </div>
+        <div class="col">
+          <h1 class="text-center sections" id="projects">projects</h1>
         </div>
-        <div class="col-sm-4">
-          <div class="project-item" id="project-3">
-            <img class="project-img img-responsive" src="https://github.com/AnthonyT-45/Things/blob/main/Project-3-noedit.png?raw=true" alt="project-3" width="1920" height="1080">
-            <div class="overlay text-start">Dungeon Tactics</div>
-          </div>
+        <div class="col">
+          <h1 class="text-center sections" id="resume">
+            <a
+              id="links"
+              target="_blank"
+              href="https://drive.google.com/file/d/1VHg7ppraayUui4S_L4iiPs7CkpoKNKkZ/view?usp=sharing"
+              >resume</a
+            >
+          </h1>
         </div>
-      </div>
-    </section>
-    <div id="modal-project-1" class="modal">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2 class="modal-header-text">Cutelandia Corrupted</h2>
-          <a class="github-logo" href="https://github.com/miad2401/ITSC4230Project1" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github-logo" width="30" height="30" class="github-logo">
-          </a>
-          <span class="close">&times;</span>
-        </div>
-        <p class="modal-text">A Game Design Prototype</p>
-        <ul class="project-description-list">
-          <li>Developed within GameMaker Studios</li>
-          <li>Collaborated with a team of four game developers</li>
-          <li>The goal of the game is to cure the creatures while avoiding their attacks</li>
-          <br>
-          <li>Contribution towards the prototype:
-            <ul class="project-description-list">
-              <li>Designing the game map</li>
-              <li>Developing enemy pathing and attack mechanics</li>
-              <li>Created a user interface to provide statistics such as health and score</li>
-            </ul>
-          </li>
-        </ul>
       </div>
     </div>
-    <div id="modal-project-2" class="modal">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2 class="modal-header-text">Abyss</h2>
-          <a class="github-logo" href="https://github.com/KevinM456/Game-Project-2" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github-logo" width="30" height="30" class="github-logo">
-          </a>
-          <span class="close">&times;</span>
-        </div>
-        <p class="modal-text">A Game Design Prototype</p>
-        <ul class="project-description-list">
-          <li>Developed within GameMaker Studios</li>
-          <li>Collaborated with a team of four game developers</li>
-          <li>The goal of the game is to platform your way to the end of the level while encountering obstacles and enemies</li>
-          <br>
-          <li>Contribution towards the prototype:
-            <ul class="project-description-list">
-              <li>Designing the levels</li>
-              <li>Developing proper player movement</li>
-              <li>Implemented sounds within the game</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div id="modal-project-3" class="modal">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2 class="modal-header-text">Dungeon Tactics</h2>
-          <a class="github-logo" href="https://github.com/0rangeB0y/2dgridgame" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github-logo" width="30" height="30" class="github-logo">
-          </a>
-          <span class="close">&times;</span>
-        </div>
-        <p class="modal-text">A Game Design Prototype</p>
-        <ul class="project-description-list">
-          <li>Developed within Unity</li>
-          <li>Collaborated with a team of three game developers</li>
-          <li>The goal of the game is to strategically outlast waves of enemies</li>
-          <br>
-          <li>Contribution towards the prototype:
-            <ul class="project-description-list">
-              <li>Designing the room</li>
-              <li>Developing the player attacks</li>
-              <li>Created enemy AI pathfinding logic</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <hr class="line" id="line-1"></hr>
-    <section class="description-container container">
+    <div class="container-fluid about-container">
       <div class="row">
-        <div id="description" class="text-center">
-          <p id="mini-status">
-            My name is Anthony Therrien, a recent graduate in Computer Science from the
-            University of North Carolina at Charlotte. I am currently engaged in personal projects as I actively seek employment opportunities.
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+          <h1 class="text-center">About Me</h1>
+          <p class="text-center">
+            Hello, I'm Anthony Therrien. A recent graduate from the University
+            of North Carolina at Charlotte. I'm currently working on personal
+            projects while simultaneously seeking full-time employment.
           </p>
         </div>
+        <div class="col-sm-4"></div>
       </div>
-    </section>
-    <hr class="line" id="line-2"></hr>
+    </div>
+    <div class="container-fluid project-container">
+      <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col">
+          <h1 class="text-center">Project List</h1>
+          <p class="text-center">- Coming soon -</p>
+        </div>
+        <div class="col-sm-4"></div>
+      </div>
+    </div>
 
+    <div class="container-fluid footer">
+      <div class="row">
+        <div class="col-sm-5">
+          <hr />
+        </div>
+        <div class="col-sm-2 d-flex justify-content-center">
+          <a href="https://github.com/AnthonyT-45" target="_blank"
+            ><img
+              id="github-logo"
+              src="https://github.com/AnthonyT-45/Things/blob/main/github-mark-white.png?raw=true"
+              width="42"
+              height="42"
+              alt="github-logo"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/anthony-therrien-b90611256/"
+            target="_blank"
+          >
+            <img
+              id="ln-logo"
+              src="https://github.com/AnthonyT-45/Things/blob/main/In-White-21@2x.png?raw=true"
+              alt="linkedin-logo"
+            />
+          </a>
+        </div>
+
+        <div class="col-sm-5">
+          <hr />
+        </div>
+      </div>
+    </div>
     <script src="script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
