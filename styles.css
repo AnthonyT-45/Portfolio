@@ -30,9 +30,7 @@ body {
 .total-logo:hover #last {
   transform: translateX(-50px);
 }
-.sections:hover {
-  transform: scale(1.1, 1);
-}
+
 #last {
   top: 20px;
   left: 60px;
@@ -50,7 +48,41 @@ body {
   user-select: none;
   text-shadow: 2px 2px 4px #808080;
   transition: 0.5s;
+  display: inline-block;
+}
+
+.sections:hover {
+  transform: scale(1.1, 1);
   cursor: pointer;
+}
+
+.about-container {
+  position: absolute;
+  top: 35vh;
+  min-height: 40vh;
+  color: whitesmoke;
+  font-family: Interphases, Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.project-container {
+  position: absolute;
+  top: 10vh;
+  min-height: 40vh;
+  color: whitesmoke;
+  font-family: Interphases, Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.about-container,
+.project-container h1 {
+  text-shadow: 1px 1px 2px #808080;
 }
 
 .footer h1 {
@@ -65,15 +97,21 @@ img {
   top: 50vh;
 }
 
-#links {
-  text-decoration: none;
-  color: whitesmoke;
+#github-logo:hover,
+#ln-logo:hover {
+  filter: brightness(0.8);
 }
 
 hr {
   position: relative;
   color: rgb(255, 255, 255);
 }
+
+#links {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
 @font-face {
   font-family: aAtmospheric;
   src: url("https://raw.githubusercontent.com/AnthonyT-45/Things/main/aAtmospheric.woff2")
@@ -83,22 +121,4 @@ hr {
   font-family: Interphases;
   src: url("https://raw.githubusercontent.com/AnthonyT-45/Things/main/TT%20Interphases%20Pro%20Trial%20ExtraBold.woff2")
     format("woff2");
-}
-
-.about-container,
-.project-container {
-  position: absolute;
-  top: 35vh;
-  min-height: 40vh;
-  color: whitesmoke;
-  font-family: Interphases, Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s ease, visibility 0.5s ease;
-}
-
-.about-container,
-.project-container h1 {
-  text-shadow: 1px 1px 2px #808080;
 }
