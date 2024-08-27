@@ -3,12 +3,22 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 body {
   background: linear-gradient(in hsl, #1d2739 20%, #0d0f10);
   background-attachment: fixed;
 }
+.container-fluid.sections-container,
+.container-fluid.about-container,
+.container-fluid.project-container,
+.container-fluid.game-design-container {
+  flex: 1;
+}
+
 .logo {
   font-size: 1rem;
   font-family: aAtmospheric, Arial, Helvetica, sans-serif;
@@ -38,7 +48,6 @@ body {
 .sections-container {
   position: relative;
   top: 35vh;
-  min-height: 40vh;
 }
 .sections {
   font-size: 5rem;
@@ -71,30 +80,76 @@ body {
 .project-container {
   position: absolute;
   top: 10vh;
-  min-height: 40vh;
   color: whitesmoke;
   font-family: Interphases, Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s ease, visibility 0.5s ease;
+  padding: 10px 15px;
 }
 
-.about-container,
-.project-container h1 {
+.about-container h1 {
   text-shadow: 1px 1px 2px #808080;
 }
 
-.footer h1 {
+.project-btn {
+  position: fixed;
+  left: 25px;
+  top: 120px;
+  font-size: 1.8rem;
+  background: none;
   color: whitesmoke;
+  border-left: solid #333c4c 3px;
+  border-right: solid #252627 3px;
+  border-top: solid #333c4c 3px;
+  border-bottom: solid #252627 3px;
+  border-radius: 17px;
+  margin: 10px;
+  white-space: nowrap;
+}
+
+.game-design-container {
+  position: relative;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.game-design-container h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+th,
+tr {
+  color: whitesmoke;
+}
+
+.game-design-container h1 {
+  font-family: Interphases, Arial, Helvetica, sans-serif;
+}
+.game-design-container h6 {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+table {
+  position: relative;
+  top: -20vh;
+}
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
 }
 
 img {
   margin: 10px;
-}
-.footer {
-  position: relative;
-  top: 50vh;
 }
 
 #github-logo:hover,
@@ -121,4 +176,29 @@ hr {
   font-family: Interphases;
   src: url("https://raw.githubusercontent.com/AnthonyT-45/Things/main/TT%20Interphases%20Pro%20Trial%20ExtraBold.woff2")
     format("woff2");
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media screen and (max-width: 700px) {
+  .sections-container {
+    top: 22vh;
+  }
+}
+
+@media (max-height: 665px) {
+  #footer {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+@media (min-height: 665px) {
+  #footer {
+    visibility: visible;
+    opacity: 1;
+  }
 }

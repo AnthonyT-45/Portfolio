@@ -3,6 +3,12 @@ const logo = document.getElementById("port-logo");
 const aboutContainer = document.querySelector(".about-container");
 const projectContainer = document.querySelector(".project-container");
 const sectionContainer = document.querySelector(".sections-container");
+const gameContainer = document.querySelector(".game-design-container");
+const projectBtns = document.querySelectorAll(".project-btn");
+const gameBtn = document.getElementById("game-btn");
+const oopBtn = document.getElementById("oop-btn");
+
+let currentContainer;
 
 sections.forEach((section) => {
   section.addEventListener("click", function () {
@@ -18,8 +24,8 @@ sections.forEach((section) => {
 
     if (section.id === "projects") {
       setTimeout(() => {
-        projectContainer.style.visibility = "visible";
-        projectContainer.style.opacity = "1";
+        gameContainer.style.visibility = "visible";
+        gameContainer.style.opacity = "1";
       }, 500);
     }
     sections.forEach((section) => {
@@ -35,6 +41,8 @@ logo.addEventListener("click", function () {
     aboutContainer.style.opacity = "0";
     projectContainer.style.visibility = "hidden";
     projectContainer.style.opacity = "0";
+    gameContainer.style.visibility = "hidden";
+    gameContainer.style.opacity = "0";
     setTimeout(() => {
       section.style.visibility = "visible";
       section.style.opacity = "1";

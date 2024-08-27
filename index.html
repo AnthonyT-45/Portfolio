@@ -11,13 +11,19 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container-fluid total-logo" id="port-logo">
       <h1 class="logo" id="first">Anthony</h1>
       <h1 class="logo" id="last">Therrien</h1>
     </div>
-    <div class="container-fluid sections-container">
+    <div class="container-fluid justify-content-center sections-container">
       <div class="row">
         <div class="col text-center">
           <h1 class="sections" id="about">about</h1>
@@ -52,16 +58,65 @@
       </div>
     </div>
     <div class="container-fluid project-container">
-      <div class="row">
-        <div class="col-sm-4"></div>
-        <div class="col text-center">
-          <h1>Coming Soon</h1>
+      <div class="row justify-content-center">
+        <div class="col-sm-4 text-start">
+          <button class="project-btn text-center" id="game-btn">Filters</button>
         </div>
-        <div class="col-sm-4"></div>
+        <div class="col-sm-8"></div>
       </div>
     </div>
+    <div class="container-fluid game-design-container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Project Title</th>
+            <th scope="col">Summary</th>
+            <th scope="col">Languages/Frameworks Used</th>
+            <th scope="col">Date Created</th>
+            <th scope="col">Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Website Portfolio</th>
+            <td>A website portfolio.</td>
+            <td>HTML, CSS, JavaScript, Bootstrap</td>
+            <td>July 2024</td>
+            <td>Coming Soon</td>
+          </tr>
+          <tr>
+            <th scope="row">Task Scheduler</th>
+            <td>A object-orientated console application.</td>
+            <td>C#</td>
+            <td>May 2024</td>
+            <td>Coming Soon</td>
+          </tr>
+          <tr>
+            <th scope="row">Dungeon Tactics</th>
+            <td>A video game designed within Unity.</td>
+            <td>C#</td>
+            <td>December 2023</td>
+            <td>Coming Soon</td>
+          </tr>
+          <tr>
+            <th scope="row">Abyss</th>
+            <td>A video game designed within GameMaker.</td>
+            <td>GameMaker Language</td>
+            <td>December 2022</td>
+            <td>Coming Soon</td>
+          </tr>
+          <tr>
+            <th scope="row">Cutelandia Corrupted</th>
+            <td>A video game designed within GameMaker.</td>
+            <td>GameMaker Language</td>
+            <td>September 2022</td>
+            <td>Coming Soon</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-    <div class="container-fluid footer">
+    <div class="container-fluid" id="footer">
       <div class="row">
         <div class="col-sm-5">
           <hr />
