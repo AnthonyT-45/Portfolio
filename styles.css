@@ -1,3 +1,7 @@
+:root {
+  color-scheme: dark;
+}
+
 html,
 body {
   width: 100%;
@@ -5,18 +9,16 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+}
+
+html {
+  overflow-y: hidden;
 }
 
 body {
   background: linear-gradient(in hsl, #1d2739 20%, #0d0f10);
   background-attachment: fixed;
-}
-.container-fluid.sections-container,
-.container-fluid.about-container,
-.container-fluid.project-container,
-.container-fluid.game-design-container {
-  flex: 1;
+  overflow-y: auto;
 }
 
 .logo {
@@ -24,10 +26,16 @@ body {
   font-family: aAtmospheric, Arial, Helvetica, sans-serif;
   width: 10px;
   color: #e1d9d1;
-  position: absolute;
-  padding: 30px;
+  position: relative;
   transition: 0.5s;
   user-select: none;
+}
+#first {
+  padding-top: 20px;
+}
+#last {
+  top: -7px;
+  left: 60px;
 }
 
 .total-logo {
@@ -41,10 +49,6 @@ body {
   transform: translateX(-50px);
 }
 
-#last {
-  top: 20px;
-  left: 60px;
-}
 .sections-container {
   position: relative;
   top: 35vh;
@@ -66,8 +70,8 @@ body {
 }
 
 .about-container {
-  position: absolute;
-  top: 35vh;
+  position: relative;
+  top: 15vh;
   min-height: 40vh;
   color: whitesmoke;
   font-family: Interphases, Arial, Helvetica, sans-serif;
@@ -75,6 +79,7 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s ease, visibility 0.5s ease;
+  margin: 0 auto;
 }
 
 .project-container {
@@ -86,27 +91,10 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s ease, visibility 0.5s ease;
-  padding: 10px 15px;
 }
 
 .about-container h1 {
   text-shadow: 1px 1px 2px #808080;
-}
-
-.project-btn {
-  position: fixed;
-  left: 25px;
-  top: 120px;
-  font-size: 1.8rem;
-  background: none;
-  color: whitesmoke;
-  border-left: solid #333c4c 3px;
-  border-right: solid #252627 3px;
-  border-top: solid #333c4c 3px;
-  border-bottom: solid #252627 3px;
-  border-radius: 17px;
-  margin: 10px;
-  white-space: nowrap;
 }
 
 .game-design-container {
@@ -116,6 +104,7 @@ body {
   transition: opacity 0.5s ease, visibility 0.5s ease;
   width: 95%;
   margin: 0 auto;
+  bottom: 400px;
 }
 
 .game-design-container h1,
@@ -138,14 +127,12 @@ tr {
 
 table {
   position: relative;
-  top: -20vh;
 }
 #footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 10px 0;
 }
 
 img {
@@ -187,18 +174,5 @@ hr {
 @media screen and (max-width: 700px) {
   .sections-container {
     top: 22vh;
-  }
-}
-
-@media (max-height: 665px) {
-  #footer {
-    visibility: hidden;
-    opacity: 0;
-  }
-}
-@media (min-height: 665px) {
-  #footer {
-    visibility: visible;
-    opacity: 1;
   }
 }
