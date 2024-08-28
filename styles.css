@@ -32,10 +32,11 @@ body {
 }
 #first {
   padding-top: 20px;
+  left: 10px;
 }
 #last {
   top: -7px;
-  left: 60px;
+  left: 70px;
 }
 
 .total-logo {
@@ -130,7 +131,7 @@ table {
 }
 #footer {
   position: relative;
-  bottom: 0;
+  top: 200px;
   left: 0;
   width: 100%;
 }
@@ -171,8 +172,8 @@ hr {
   font-style: normal;
 }
 
-@media screen and (max-width: 700px) {
-  .sections-container {
-    top: 22vh;
+@media screen and (max-height: 700px) {
+  .game-design-container {
+    top: -200px;
   }
 }
