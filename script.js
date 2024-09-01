@@ -28,6 +28,11 @@ sections.forEach((section) => {
         gameContainer.style.opacity = "1";
       }, 500);
     }
+    logo.style.pointerEvents = "none";
+    setTimeout(() => {
+      logo.style.pointerEvents = "auto";
+    }, 500);
+
     sections.forEach((section) => {
       section.style.visibility = "hidden";
       section.style.opacity = "0";
