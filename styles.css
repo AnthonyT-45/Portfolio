@@ -90,10 +90,6 @@ body {
   margin: 0 auto;
 }
 
-.about-container h1 {
-  text-shadow: 1px 1px 2px #808080;
-}
-
 .project-container {
   position: absolute;
   top: 10vh;
@@ -105,16 +101,18 @@ body {
   transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
+.about-container h1 {
+  text-shadow: 1px 1px 2px #808080;
+}
+
 .game-design-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.5s ease, visibility 0.5s ease;
   width: 95%;
   margin: 0 auto;
+  bottom: 400px;
 }
 
 .game-design-container h1,
@@ -176,4 +174,10 @@ hr {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+@media screen and (min-width: 700px) {
+  .game-design-container {
+    top: -250px;
+  }
 }
