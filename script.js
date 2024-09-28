@@ -1,7 +1,6 @@
 const sections = document.querySelectorAll(".sections");
 const logo = document.getElementById("port-logo");
 const aboutContainer = document.querySelector(".about-container");
-const projectContainer = document.querySelector(".project-container");
 const sectionContainer = document.querySelector(".sections-container");
 const gameContainer = document.querySelector(".game-design-container");
 const projectBtns = document.querySelectorAll(".project-btn");
@@ -44,8 +43,6 @@ logo.addEventListener("click", function () {
   sections.forEach((section) => {
     aboutContainer.style.visibility = "hidden";
     aboutContainer.style.opacity = "0";
-    projectContainer.style.visibility = "hidden";
-    projectContainer.style.opacity = "0";
     gameContainer.style.visibility = "hidden";
     gameContainer.style.opacity = "0";
     setTimeout(() => {
