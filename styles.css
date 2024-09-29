@@ -4,21 +4,14 @@
 
 html,
 body {
-  width: 100%;
-  height: 100%;
   margin: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-html {
-  overflow-y: hidden;
+  padding: 0;
 }
 
 body {
-  background: linear-gradient(in hsl, #1d2739 20%, #0d0f10);
+  background: linear-gradient(#1d2739 20%, #0d0f10);
   background-attachment: fixed;
-  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .logo {
@@ -32,7 +25,7 @@ body {
 }
 #first {
   padding-top: 20px;
-  left: 10px;
+  left: 5px;
 }
 #last {
   top: -7px;
@@ -40,14 +33,10 @@ body {
 }
 
 .total-logo {
-  position: relative;
+  margin: 20px auto;
+  text-align: center;
   display: inline-block;
-  cursor: pointer;
-  width: 180px;
-  height: 100px;
-  z-index: 5;
-  margin-left: 0;
-  margin-right: 0;
+  width: 200px;
 }
 
 .total-logo:hover #first {
@@ -58,10 +47,8 @@ body {
 }
 
 .sections-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 40px auto;
+  text-align: center;
 }
 .sections {
   font-size: 5rem;
@@ -70,7 +57,7 @@ body {
   color: whitesmoke;
   user-select: none;
   text-shadow: 2px 2px 4px #808080;
-  transition: 0.5s;
+  transition: transform 0.5s ease;
   display: inline-block;
 }
 
@@ -80,15 +67,10 @@ body {
 }
 
 .about-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  visibility: hidden;
   opacity: 0;
-  transition: opacity 0.5s ease, visibility 0.5s ease;
   width: 95%;
-  margin: 0 auto;
+  margin: 20px auto;
+  padding: 20px;
   color: whitesmoke;
   font-family: Interphases, Arial, Helvetica, sans-serif;
 }
@@ -100,19 +82,14 @@ body {
 .about-container p {
   font-size: 1.4rem;
 }
-.game-design-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  visibility: hidden;
+.project-container {
   opacity: 0;
-  transition: opacity 0.5s ease, visibility 0.5s ease;
-  width: 95%;
-  margin: 0 auto;
+  margin: 20px auto;
+  padding: 20px;
+  color: whitesmoke;
 }
 
-.game-design-container h1,
+.project-container h1,
 h2,
 h3,
 h4,
@@ -123,18 +100,16 @@ tr {
   color: whitesmoke;
 }
 
-.game-design-container h1 {
+.project-container h1 {
   font-family: Interphases, Arial, Helvetica, sans-serif;
 }
-.game-design-container h6 {
+.project-container h6 {
   font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
-table {
-  position: relative;
-}
 #footer {
-  position: relative;
+  text-align: center;
+  padding: 10px 0;
 }
 
 #footer img {
@@ -197,7 +172,7 @@ hr {
   .about-container p {
     font-size: 1.1rem;
   }
-  .game-design-container {
+  .project-container {
     font-size: 0.6rem;
   }
   #footer img {
@@ -215,11 +190,20 @@ hr {
   .about-container p {
     font-size: 1rem;
   }
-  .game-design-container {
+  .project-container {
     font-size: 0.6rem;
   }
   #footer img {
     max-width: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  .about-container h1 {
+    font-size: 1.2rem;
+  }
+  .about-container p {
+    font-size: 0.8rem;
   }
 }
 
@@ -228,12 +212,12 @@ hr {
     font-size: 3.5rem;
   }
   .about-container h1 {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
   .about-container p {
-    font-size: 1.1rem;
+    font-size: 0.8rem;
   }
-  .game-design-container {
+  .project-container {
     font-size: 0.6rem;
   }
   #footer img {
@@ -247,15 +231,41 @@ hr {
     font-size: 2.5rem;
   }
   .about-container h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .about-container p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
-  .game-design-container {
+  .project-container {
     font-size: 0.48rem;
   }
   #footer img {
     max-width: 30px;
   }
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  display: none;
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  display: block;
+}
+
+.transition {
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
 }

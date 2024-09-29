@@ -1,53 +1,41 @@
 const sections = document.querySelectorAll(".sections");
 const logo = document.getElementById("port-logo");
 const aboutContainer = document.querySelector(".about-container");
+const projectContainer = document.querySelector(".project-container");
 const sectionContainer = document.querySelector(".sections-container");
-const gameContainer = document.querySelector(".game-design-container");
-const projectBtns = document.querySelectorAll(".project-btn");
-const gameBtn = document.getElementById("game-btn");
-const oopBtn = document.getElementById("oop-btn");
-
-let currentContainer;
 
 sections.forEach((section) => {
   section.addEventListener("click", function () {
     if (section.id === "resume") {
       return;
     }
+
+    sectionContainer.classList.add("hidden");
+    sectionContainer.classList.remove("visible");
+
     if (section.id === "about") {
-      setTimeout(() => {
-        aboutContainer.style.visibility = "visible";
-        aboutContainer.style.opacity = "1";
-      }, 500);
+      aboutContainer.classList.add("visible");
+      aboutContainer.classList.remove("hidden");
     }
 
     if (section.id === "projects") {
-      setTimeout(() => {
-        gameContainer.style.visibility = "visible";
-        gameContainer.style.opacity = "1";
-      }, 500);
+      projectContainer.classList.add("visible");
+      projectContainer.classList.remove("hidden");
     }
+
     logo.style.pointerEvents = "none";
     setTimeout(() => {
       logo.style.pointerEvents = "auto";
     }, 500);
-
-    sections.forEach((section) => {
-      section.style.visibility = "hidden";
-      section.style.opacity = "0";
-    });
   });
 });
 
 logo.addEventListener("click", function () {
-  sections.forEach((section) => {
-    aboutContainer.style.visibility = "hidden";
-    aboutContainer.style.opacity = "0";
-    gameContainer.style.visibility = "hidden";
-    gameContainer.style.opacity = "0";
-    setTimeout(() => {
-      section.style.visibility = "visible";
-      section.style.opacity = "1";
-    }, 500);
-  });
+  aboutContainer.classList.add("hidden");
+  aboutContainer.classList.remove("visible");
+  projectContainer.classList.add("hidden");
+  projectContainer.classList.remove("visible");
+
+  sectionContainer.classList.add("visible");
+  sectionContainer.classList.remove("hidden");
 });

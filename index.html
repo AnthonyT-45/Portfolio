@@ -18,155 +18,136 @@
       rel="stylesheet"
     />
   </head>
-  <body class="d-flex flex-column vh-100">
-    <div class="container-fluid total-logo" id="port-logo">
-      <h1 class="logo" id="first">Anthony</h1>
-      <h1 class="logo" id="last">Therrien</h1>
-    </div>
-    <div class="container-fluid justify-content-center sections-container">
-      <div class="row">
-        <div class="col text-center">
-          <h1 class="sections" id="about">about</h1>
+  <body class="d-flex flex-column min-vh-100">
+    <header>
+      <div class="container-fluid total-logo" id="port-logo">
+        <h1 class="logo" id="first">Anthony</h1>
+        <h1 class="logo" id="last">Therrien</h1>
+      </div>
+    </header>
+    <main
+      class="flex-shrink-0 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="container-fluid justify-content-center sections-container visible transition"
+      >
+        <div class="row">
+          <div class="col text-center">
+            <h1 class="sections" id="about">about</h1>
+          </div>
+          <div class="col text-center">
+            <h1 class="sections" id="projects">projects</h1>
+          </div>
+          <div class="col text-center">
+            <h1 class="sections" id="resume">
+              <a
+                id="links"
+                target="_blank"
+                href="https://drive.google.com/file/d/1YAVgUP5FZjsYd5nbk6WeQC7U0INbvd1A/view?usp=sharing"
+                >resume</a
+              >
+            </h1>
+          </div>
         </div>
-        <div class="col text-center">
-          <h1 class="sections" id="projects">projects</h1>
+      </div>
+      <div class="container-fluid about-container hidden transition">
+        <div class="row justify-content-center">
+          <div class="col"></div>
+          <div class="col-12 col-md-3">
+            <h1 class="text-center">About Me</h1>
+            <p class="text-center info">
+              Hello, I'm Anthony Therrien, a recent graduate from the University
+              of North Carolina at Charlotte. I'm 22 years old and currently
+              based in California, USA.
+            </p>
+          </div>
+          <div class="col"></div>
+          <div class="col-12 col-md-3">
+            <h1 class="text-center">Skills</h1>
+            <p class="text-center info">
+              My strength lies within Game Development, driven by the passion to
+              create an enjoyable experience for players. My skill set also
+              extends to Software Engineering and Machine Learning.
+            </p>
+          </div>
+          <div class="col"></div>
+          <div class="col-12 col-md-3">
+            <h1 class="text-center">Current Goal</h1>
+            <p class="text-center info">
+              My current goal is to pursue a career in the field of Game Design
+              or Software Engineering. I'm also continuing to learn new topics
+              within Computer Science to keep expanding my current skillset.
+            </p>
+          </div>
+          <div class="col"></div>
         </div>
-        <div class="col text-center">
-          <h1 class="sections" id="resume">
+      </div>
+      <div class="container-fluid project-container hidden transition">
+        <div class="vstack gap-0">
+          <div class="py-3 border-bottom">
+            <h3>Python Regression Models</h3>
+            <p>A machine learning project.</p>
             <a
-              id="links"
+              href="https://github.com/AnthonyT-45/Python-Regression-Models"
               target="_blank"
-              href="https://drive.google.com/file/d/1YAVgUP5FZjsYd5nbk6WeQC7U0INbvd1A/view?usp=sharing"
-              >resume</a
+              class="btn btn-primary"
+              >GitHub Repo</a
             >
-          </h1>
+          </div>
+          <div class="py-3 border-bottom">
+            <h3>Website Portfolio</h3>
+            <p>A website portfolio.</p>
+            <a
+              href="https://github.com/AnthonyT-45/Portfolio"
+              target="_blank"
+              class="btn btn-primary"
+              >GitHub Repo</a
+            >
+          </div>
+          <div class="py-3 border-bottom">
+            <h3>Task Scheduler</h3>
+            <p>A object-orientated console application.</p>
+            <a
+              href="https://github.com/AnthonyT-45/TaskScheduler"
+              target="_blank"
+              class="btn btn-primary"
+              >GitHub Repo</a
+            >
+          </div>
+          <div class="py-3 border-bottom">
+            <h3>Dungeon Tactics</h3>
+            <p>A video game designed within Unity.</p>
+            <a
+              href="https://github.com/0rangeB0y/2dgridgame"
+              target="_blank"
+              class="btn btn-primary"
+              >GitHub Repo</a
+            >
+          </div>
+          <div class="py-3 border-bottom">
+            <h3>Abyss</h3>
+            <p>A video game designed within GameMaker.</p>
+            <a
+              href="https://github.com/KevinM456/Game-Project-2"
+              target="_blank"
+              class="btn btn-primary"
+              >GitHub Repo</a
+            >
+          </div>
+          <div class="py-3">
+            <h3>Cutelandia Corrupted</h3>
+            <p>A video game designed within GameMaker.</p>
+            <a
+              href="https://github.com/miad2401/ITSC4230Project1"
+              target="_blank"
+              class="btn btn-primary"
+              >GitHub Repo</a
+            >
+          </div>
         </div>
       </div>
-    </div>
-    <div class="container-fluid about-container">
-      <div class="row justify-content-center">
-        <div class="col"></div>
-        <div class="col-12 col-md-3">
-          <h1 class="text-center">About Me</h1>
-          <p class="text-center info">
-            Hello, I'm Anthony Therrien, a recent graduate from the University
-            of North Carolina at Charlotte. I'm 22 years old and currently based
-            in California, USA.
-          </p>
-        </div>
-        <div class="col"></div>
-        <div class="col-12 col-md-3">
-          <h1 class="text-center">Skills</h1>
-          <p class="text-center info">
-            My strength lies within Game Development, driven by the passion to
-            create an enjoyable experience for players. My skill set also
-            extends to Software Engineering and Machine Learning.
-          </p>
-        </div>
-        <div class="col"></div>
-        <div class="col-12 col-md-3">
-          <h1 class="text-center">Current Goal</h1>
-          <p class="text-center info">
-            My current goal is to pursue a career in the field of Game Design or
-            Software Engineering. I'm also continuing to learn new topics within
-            Computer Science to keep expanding my current skillset.
-          </p>
-        </div>
-        <div class="col"></div>
-      </div>
-    </div>
-    <div class="container-fluid game-design-container">
-      <div class="table-responsive">
-        <table class="table mx-auto">
-          <thead>
-            <tr>
-              <th scope="col">Project Title</th>
-              <th scope="col">Summary</th>
-              <th scope="col">Languages/Frameworks Used</th>
-              <th scope="col">Date Created</th>
-              <th scope="col">Link</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Python Regression Models</th>
-              <td>A machine learning project.</td>
-              <td>Python</td>
-              <td>August 2024</td>
-              <td>
-                <a
-                  href="https://github.com/AnthonyT-45/Python-Regression-Models"
-                  target="_blank"
-                  >Github Repo</a
-                >
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">Website Portfolio</th>
-              <td>A website portfolio.</td>
-              <td>HTML, CSS, JavaScript, Bootstrap</td>
-              <td>August 2024</td>
-              <td>
-                <a href="https://anthonyt-45.github.io/Portfolio/">Home Page</a>
-              </td>
-            </tr>
+    </main>
 
-            <tr>
-              <th scope="row">Task Scheduler</th>
-              <td>A object-orientated console application.</td>
-              <td>C#</td>
-              <td>May 2024</td>
-              <td>
-                <a
-                  href="https://github.com/AnthonyT-45/TaskScheduler"
-                  target="_blank"
-                  >Github Repo</a
-                >
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">Dungeon Tactics</th>
-              <td>A video game designed within Unity.</td>
-              <td>C#</td>
-              <td>December 2023</td>
-              <td>
-                <a
-                  href="https://github.com/0rangeB0y/2dgridgame"
-                  target="_blank"
-                  >Github Repo</a
-                >
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">Abyss</th>
-              <td>A video game designed within GameMaker.</td>
-              <td>GameMaker Language</td>
-              <td>December 2022</td>
-              <td>
-                <a
-                  href="https://github.com/KevinM456/Game-Project-2"
-                  target="_blank"
-                  >Github Repo</a
-                >
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">Cutelandia Corrupted</th>
-              <td>A video game designed within GameMaker.</td>
-              <td>GameMaker Language</td>
-              <td>September 2022</td>
-              <td>
-                <a
-                  href="https://github.com/miad2401/ITSC4230Project1"
-                  target="_blank"
-                  >Github Repo</a
-                >
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
     <footer class="mt-auto">
       <div class="container-fluid" id="footer">
         <div class="row align-items-center flex-nowrap justify-content-center">
