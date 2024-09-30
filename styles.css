@@ -96,6 +96,7 @@ body {
 .project-container h3 {
   font-family: Interphases, Arial, Helvetica, sans-serif;
   color: whitesmoke;
+  padding-bottom: 10px;
 }
 .project-container p {
   font-family: Roboto, Arial, Helvetica, sans-serif;
