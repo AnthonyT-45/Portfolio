@@ -37,6 +37,7 @@ body {
   text-align: center;
   display: inline-block;
   width: 200px;
+  padding-left: 25px;
 }
 
 .total-logo:hover #first {
@@ -58,7 +59,6 @@ body {
   user-select: none;
   text-shadow: 2px 2px 4px #808080;
   transition: transform 0.5s ease;
-  display: inline-block;
 }
 
 .sections:hover {
@@ -67,12 +67,12 @@ body {
 }
 
 .about-container {
-  opacity: 0;
   width: 95%;
   margin: 20px auto;
   padding: 20px;
   color: whitesmoke;
   font-family: Interphases, Arial, Helvetica, sans-serif;
+  display: none;
 }
 
 .about-container h1 {
@@ -83,28 +83,23 @@ body {
   font-size: 1.4rem;
 }
 .project-container {
-  opacity: 0;
   margin: 20px auto;
   padding: 20px;
-  color: whitesmoke;
+  width: 50%;
+  display: none;
+  opacity: 0;
+  transition-property: display opacity;
+  transition-duration: 1s;
+  transition-behavior: allow-discrete;
 }
 
-.project-container h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-th,
-tr {
-  color: whitesmoke;
-}
-
-.project-container h1 {
+.project-container h3 {
   font-family: Interphases, Arial, Helvetica, sans-serif;
+  color: whitesmoke;
 }
-.project-container h6 {
+.project-container p {
   font-family: Roboto, Arial, Helvetica, sans-serif;
+  color: lightgrey;
 }
 
 #footer {
@@ -244,22 +239,32 @@ hr {
   }
 }
 
-.hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  display: none;
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.visible {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-  display: block;
+@keyframes vanish {
+  from {
+    display: block;
+    opacity: 1;
+  }
+  to {
+    display: none;
+    opacity: 0;
+  }
 }
 
-.transition {
-  transition: opacity 0.5s ease, visibility 0.5s ease;
+.appear {
+  animation: appear 0.2s forwards;
+}
+
+.vanish {
+  animation: vanish 0.2s forwards;
 }
 
 main {
