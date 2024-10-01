@@ -219,7 +219,7 @@ hr {
 
 @media (max-height: 700px) {
   .sections {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
   .about-container h1 {
     font-size: 1.2rem;
@@ -236,10 +236,7 @@ hr {
   }
 }
 
-@media (max-height: 500px) {
-  .sections {
-    font-size: 2.5rem;
-  }
+@media (max-height: 675px) {
   .about-container h1 {
     font-size: 1.2rem;
   }
