@@ -70,21 +70,23 @@ body {
 }
 
 .about-container {
-  width: 95%;
   margin: 20px auto;
   padding: 20px;
   color: whitesmoke;
   font-family: Interphases, Arial, Helvetica, sans-serif;
   display: none;
+  width: 60%;
 }
 
 .about-container h1 {
   text-shadow: 1px 1px 2px #808080;
   font-size: 2.3rem;
+  padding-bottom: 5px;
 }
 .about-container p {
   font-size: 1.4rem;
   color: lightgrey;
+  padding-bottom: 10px;
 }
 .project-container {
   margin: 20px auto;
@@ -194,6 +196,9 @@ hr {
   }
   .about-container p {
     font-size: 1rem;
+  }
+  .about-container {
+    width: 80%;
   }
   .project-container {
     font-size: 1rem;
