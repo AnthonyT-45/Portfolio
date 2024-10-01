@@ -24,7 +24,6 @@ body {
   user-select: none;
 }
 #first {
-  padding-top: 20px;
   left: 5px;
 }
 #last {
@@ -37,7 +36,7 @@ body {
   text-align: center;
   display: inline-block;
   width: 200px;
-  padding-left: 25px;
+  padding-left: 15px;
 }
 
 .total-logo:hover #first {
@@ -45,6 +44,10 @@ body {
 }
 .total-logo:hover #last {
   transform: translateX(-50px);
+}
+
+.total-logo:hover {
+  cursor: pointer;
 }
 
 .sections-container {
@@ -81,11 +84,12 @@ body {
 }
 .about-container p {
   font-size: 1.4rem;
+  color: lightgrey;
 }
 .project-container {
   margin: 20px auto;
   padding: 20px;
-  width: 50%;
+  width: 70%;
   display: none;
   opacity: 0;
   transition-property: display opacity;
@@ -101,6 +105,7 @@ body {
 .project-container p {
   font-family: Roboto, Arial, Helvetica, sans-serif;
   color: lightgrey;
+  width: 60%;
 }
 
 #footer {
@@ -170,6 +175,10 @@ hr {
   }
   .project-container {
     font-size: 1rem;
+    width: 100%;
+  }
+  .project-container p {
+    width: 100%;
   }
   #footer img {
     max-width: 38px;
