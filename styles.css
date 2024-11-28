@@ -110,6 +110,11 @@ body {
   width: 60%;
 }
 
+.project-btn {
+  background-color: #008b8b;
+  color: whitesmoke;
+}
+
 #footer {
   text-align: center;
   padding: 10px 0;
