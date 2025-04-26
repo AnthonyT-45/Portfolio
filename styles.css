@@ -55,6 +55,7 @@ body {
   text-align: center;
 }
 .sections {
+  display: inline-block;
   font-size: 5rem;
   font-family: Interphases, Arial, Helvetica, sans-serif;
   margin: 20px;
